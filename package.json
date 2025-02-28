@@ -1,12 +1,14 @@
 {
   "name": "react-starter",
-  "version": "1.0.0",
+  "version": "1.0.0",  
   "description": "### Starting point for a simple React app with Webpack and Babel",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "eslint . --ext .js,.jsx --config eslint.config.mjs",
+    "lint:fix": "eslint . --ext .js,.jsx --fix --config eslint.config.mjs"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +21,12 @@
     "@babel/core": "^7.26.9",
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-react": "^7.26.3",
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.21.0",
     "babel-loader": "^10.0.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1",
